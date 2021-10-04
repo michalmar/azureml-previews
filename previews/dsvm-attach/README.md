@@ -35,7 +35,7 @@ This step is needed since the Azure ML service needs to have access to the DSVM 
 
 1. Go to your DSVM in  [Azure Portal](https://porta.azure.com)
 
-1. Go to Firewall settings and allow inbound connection to service tag `AzureMachineLearning` and for ports `23000-30000` ![allow-inbound-rule](./media/prereq-firewall-settings.png)
+1. Go to Firewall settings and allow inbound connection to service tag `AzureMachineLearning` and for ports `23000-30000` (see below) 
 
 |Parameter|Value|
 |------|-----|
@@ -49,6 +49,10 @@ This step is needed since the Azure ML service needs to have access to the DSVM 
 |Action|Allow|
 |Priority| something low enough to apply, e.g. 1001|
 |Name| name your rule, e.g. AzureML|
+
+
+![allow-inbound-rule](./media/prereq-firewall-settings2.png)
+
 
 
 
