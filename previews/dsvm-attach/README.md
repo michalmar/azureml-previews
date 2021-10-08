@@ -5,21 +5,24 @@ Data Science Virtual Machine (DSVM) is unmanaged machine learning workstation. D
 
 This PREVIEW will provide a delightful DSVM attach to Azure ML so that existing DSVM users can get value-add features and an easier on-ramp to Azure ML.  
 
+Preview features:
+
 ![benefit](./media/b1.svg) <strong>Keep using DSVM</strong>
 
 ![benefit](./media/b2.svg) <strong>SSO Applications (e.g. Jupyter)</strong>
+
+
+![benefit](./media/b5.svg) <strong>Ease of access to resource from AML</strong>
+
+![benefit](./media/b6.svg) <strong>Fully controlled by org sec policies (VM)</strong>
+
+GA features:
 
 ![benefit](./media/b3.svg) Automatic upgrades of VM Environment (sw/
 packages)
 
 ![benefit](./media/b4.svg) Mounted hosted AML Datastores
 
-![benefit](./media/b5.svg) <strong>Ease of access to resource from AML</strong>
-
-![benefit](./media/b6.svg) <strong>Fully controlled by org sec policies (VM)</strong>
-
-
-Interactive job is supported on **AMLArc Compute** and will be available on AmlCompute and Compute Instances in a future release.
 
 ## Prerequisites
 - Azure ML Workspace -  - if you don't have any please find simple instruction [here](https://docs.microsoft.com/en-us/azure/machine-learning/quickstart-create-resources#create-the-workspace)
@@ -35,7 +38,7 @@ This step is needed since the Azure ML service needs to have access to the DSVM 
 
 1. Go to your DSVM in  [Azure Portal](https://porta.azure.com)
 
-1. Go to Firewall settings and allow inbound connection to service tag `AzureMachineLearning` and for ports `23000-30000` (see below) 
+1. Go to Firewall settings and allow inbound connection to service tag `AzureMachineLearning` and for ports `20000-30000` (see below) 
 
 |Parameter|Value|
 |------|-----|
@@ -44,12 +47,13 @@ This step is needed since the Azure ML service needs to have access to the DSVM 
 |Source port ranges| * (any)|
 |Destination| Any|
 |Service|Custom|
-|Destination port ranges| 23000-30000|
+|Destination port ranges| 20000-30000|
 |Protocol|Any|
 |Action|Allow|
 |Priority| something low enough to apply, e.g. 1001|
 |Name| name your rule, e.g. AzureML|
 
+> Note: when setting priority for this rule make sure the priority is high enough (lower number ~ higher priority) to overrule other restriction that might be present on your NSGs
 
 ![allow-inbound-rule](./media/prereq-firewall-settings2.png)
 
@@ -69,12 +73,15 @@ Now you have everything prepared and can attach your DSVM:
 
 1. After a while you should see your DSVM to be succesfully attached and also can access your application (Jupyter) via link on the compute row ![access-jupyter](./media/attach-05-jupyter.png)
 
+> Note: for the Preview only Jupyter and JupyterLab links are working/visible
+
 You can now work using Jupyter with SSO - try [this tutorial](./docs/attach-dsvm-and-run-simple-notebook.md).
 
 
 ## Known Issues
 
-TBD
+- cannot connect to Jupyter/JupyterLab -> make sure your firewall rules are setup correctly
+- Icannot see my previously created content (files, noteooks, etc.) on DSVM when I attach and connect trough Jupyter -> your home folder needs to be linked, e.g. `sudo mount --bind /home/<dsvmuser> /home/<attach-user-name>/`  
 
 ## Contact Us
 Reach out to us: xxx@microsoft.com if you have any questions or feedback.
