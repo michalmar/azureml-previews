@@ -30,8 +30,6 @@ packages)
 
 > Note (*): at this point only Ubuntu based DSVM are supported. Currently only Ubuntu 18.04 is supported.
 
-> Note (INTERNAL): Currently only `centraluseaup` region is supported.
-
 ## Get started
 ### [prereq] Configure DSVM firewal
 This step is needed since the Azure ML service needs to have access to the DSVM (for accessing Jupyter noteboks)
@@ -71,7 +69,7 @@ Now you have everything prepared and can attach your DSVM:
 
 1. Name your compute (this name appears in AML Studio) and select your DSVM from your Subscription (dropdown list) and hist "Attach" button (this operation can tak minute or two) ![select-dsvm](./media/attach-03-attach-step.png)
 
-1. After a while you should see your DSVM to be succesfully attached and also can access your application (Jupyter) via link on the compute row ![access-jupyter](./media/attach-05-jupyter.png)
+1. After a while you should see your DSVM to be succesfully attached and also can access your application (Jupyter) via link on the compute row or in the attached compute detail page ![access-jupyter](./media/attach-05-jupyter.png) 
 
 > Note: for the Preview only Jupyter and JupyterLab links are working/visible
 
