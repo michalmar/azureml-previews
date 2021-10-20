@@ -4,9 +4,9 @@
 - Attached DSVM as per [this article](../README.md)
 
 ## How to get to tutorial
-1. Open JupyterLab - from the AML Studio, simple go to the currently attached DSVM detail page and on the bottom click on particular link: ![access-jupyter](../media\tut-open-jupyter.png) 
+1. Open JupyterLab - from the AML Studio, simple go to the currently attached DSVM detail page and on the bottom click on particular link: ![access-jupyter](../media/tut-open-jupyter.png) 
 
-1. Open terminal in JupyterLab and download Azure Machine Learning notebooks repository: `git clone https://github.com/Azure/MachineLearningNotebooks.git` ![access-jupyter-terminal](../media\tut-open-terminal.png) 
+1. Open terminal in JupyterLab and download Azure Machine Learning notebooks repository: `git clone https://github.com/Azure/MachineLearningNotebooks.git` ![access-jupyter-terminal](../media/tut-open-terminal.png) 
 
 1. In JupyterLab navigate to cloned folder `MachineLearningNotebooks/tutorials/regression-automl-nyc-taxi-data` and open notebook: `regression-automated-ml.ipynb` and if not already select a Jupyter Kernel `Python [conda env:azureml_py36_automl]`![tutorial-notebook](../media/tut-notebook.png)
 
