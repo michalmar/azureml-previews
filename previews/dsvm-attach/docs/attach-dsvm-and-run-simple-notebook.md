@@ -4,7 +4,7 @@
 - Attached DSVM as per [this article](../README.md)
 
 ## How to get to tutorial
-1. Open JupyterLab - from the AML Studio, simple go to the currently attached DSVM detail page and on the bottom click on particular link: ![access-jupyter](../media/tut-open-jupyter.png) 
+1. Open JupyterLab - from the AML Studio, simple go to the currently attached DSVM and select link from Applications: ![access-jupyter](../media/attach-05-jupyter.png) 
 
 1. Open terminal in JupyterLab and download Azure Machine Learning notebooks repository: `git clone https://github.com/Azure/MachineLearningNotebooks.git` ![access-jupyter-terminal](../media/tut-open-terminal.png) 
 
