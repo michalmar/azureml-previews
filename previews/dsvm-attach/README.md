@@ -74,6 +74,8 @@ Now you have everything prepared and can attach your DSVM:
 
 > Note: for the Preview only Jupyter and JupyterLab links are working/visible
 
+## Next Steps
+
 You can now work using Jupyter with SSO - try [this tutorial](./docs/attach-dsvm-and-run-simple-notebook.md).
 
 
@@ -83,4 +85,4 @@ You can now work using Jupyter with SSO - try [this tutorial](./docs/attach-dsvm
 - I cannot see my previously created content (files, notebooks, etc.) on DSVM when I attach and connect trough Jupyter -> your home folder needs to be linked, e.g. `sudo mount --bind /home/<dsvmuser> /home/<attach-user-name>/`  
 
 ## Contact Us
-Reach out to us: xxx@microsoft.com if you have any questions or feedback.
+Reach out to us: mimarusa@microsoft.com if you have any questions or feedback.
