@@ -16,7 +16,7 @@ Preview features:
 
 ![benefit](./media/b6.svg) <strong>Fully controlled by org sec policies (VM)</strong>
 
-GA features:
+Roadmap:
 
 ![benefit](./media/b3.svg) Automatic upgrades of VM Environment (sw/
 packages)
