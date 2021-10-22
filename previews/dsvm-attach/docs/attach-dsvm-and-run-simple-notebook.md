@@ -1,4 +1,4 @@
-# Tutorial: Run simple ML experiment on attached DSVM
+# Tutorial: Track your first experiment with attached Data Science VM
 
 ## Prerequisites
 - Attached DSVM as per [this article](../README.md)
